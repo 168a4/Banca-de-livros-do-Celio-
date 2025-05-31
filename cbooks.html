@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Books - Sua Loja de Livros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --black: #000000;
+            --purple-dark: #3A0CA3;
+            --green-dark: #007F5F;
+            --white: #FFFFFF;
+            --gray: #BFBFBF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--black);
+            color: var(--white);
+        }
+
+        header {
+            background-color: var(--purple-dark);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            color: var(--green-dark);
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--green-dark);
+        }
+
+        .banner {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(145deg, var(--purple-dark), var(--black));
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .banner p {
+            font-size: 1.2rem;
+            color: var(--gray);
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 40px;
+        }
+
+        .product-card {
+            background-color: var(--purple-dark);
+            border: 2px solid var(--green-dark);
+            border-radius: 15px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px var(--green-dark);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-card h3 {
+            margin: 15px 0 5px;
+        }
+
+        .product-card p {
+            color: var(--gray);
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--green-dark);
+            color: var(--white);
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #009F6B;
+        }
+
+        footer {
+            background-color: var(--black);
+            color: var(--gray);
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--purple-dark);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">C</div>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Livros</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h1>Bem-vindo à C Books</h1>
+        <p>Explore universos infinitos. Seu portal para o conhecimento, fantasia e aventura.</p>
+    </section>
+
+    <section class="products">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250x350.png?text=Livro+1" alt="Livro 1">
+            <h3>Título do Livro 1</h3>
+            <p>Autor - Descrição breve do livro.</p>
+            <a href="#" class="btn">Comprar</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250x350.png?text=Livro+2" alt="Livro 2">
+            <h3>Título do Livro 2</h3>
+            <p>Autor - Descrição breve do livro.</p>
+            <a href="#" class="btn">Comprar</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://via.placeholder.com/250x350.png?text=Livro+3" alt="Livro 3">
+            <h3>Título do Livro 3</h3>
+            <p>Autor - Descrição breve do livro.</p>
+            <a href="#" class="btn">Comprar</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 C Books. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
